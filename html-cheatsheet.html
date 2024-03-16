@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Aaron's HTML Cheatsheet</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="html-cheatsheet.html">
+            <button>HTML</button>
+        </a>
+    
+        <a href="#">
+            <button>CSS</button>
+        </a>
+    
+        <a href="#">
+            <button>Console (Bash)</button>
+        </a>
+    
+        <a href="#">
+            <button>JavaScript</button>
+        </a>
+    </header>
+
+    <main>
+        <section class="topic-header">
+            <h1><span class="markdown-bullet mb1"># </span>HTML cheatsheet</h1>
+            <p>This HTML quick reference cheat sheet lists the common HTML and HTML5 components in readable layout.</p>
+        </section>
+
+        <h2 class="topic-title"><span class="markdown-bullet mb2">## </span>Getting Started</h2>
+        <section class="topic-section getting_started">
+     
+            <p></p>
+
+            <article class="sub-topic">
+                <h3><span class="markdown-bullet mb3">### </span>Document</h3>
+                <p>Document and website structure</p>
+                <div class="code-example">
+                    <pre>
+                        <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html lang=&quot;en&quot;&gt;
+                            &lt;head&gt;
+                                &lt;meta charset=&quot;UTF-8&quot;&gt;
+                                &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                                &lt;title&gt;Document&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body&gt;
+                                
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article class="sub-topic">
+                <h3><span class="markdown-bullet mb3">### </span>Comment</h3>
+                <p>In HTML, comments can be added between an opening <code>&lt;!-- and closing --&gt;</code>. Content inside of comments will not be rendered by browsers, and are usually used to describe a part of code or provide other details.</p>
+                <div class="code-example">
+                    <pre>
+                        <code>
+                            &lt;!-- this is a comment --&gt;
+
+                            &lt;!--
+                                Or you can comment out a
+                                large number of lines.
+                            --&gt;
+
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article class="sub-topic">
+                <h3><span class="markdown-bullet mb3">### </span>Paragraph </h3>
+                <p>The <code>&lt;p&gt;</code> paragraph element contains and displays a block of text.</p>
+                <div class="code-example">
+                    <pre>
+                        <code>
+                            &lt;p&gt;This is a block of text! Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article class="sub-topic">
+                <h3><span class="markdown-bullet mb3">### </span>Anchor Element </h3>
+                <p>The &lt;a&gt; anchor element is used to create hyperlinks in an HTML document. The hyperlinks can point to other webpages, files on the same server, a location on the same page, or any other URL via the hyperlink reference attribute, href. The href determines the location the anchor element points to.</p>
+                <div class="code-example">
+                    <pre>
+                        <code>
+                            &lt;!-- Creating text links --&gt;
+                            &lt;a href=&quot;http://www.codecademy.com&quot;&gt;Visit this site&lt;/a&gt;
+
+                            &lt;!-- Creating image links --&gt;
+                            &lt;a href=&quot;http://www.codecademy.com&quot;&gt;
+                                &lt;img src=&quot;logo.jpg&quot;&gt;Click this image
+                            &lt;/a&gt;
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+
+            <article class="sub-topic">
+                <h3><span class="markdown-bullet mb3">### </span>Image Tag</h3>
+                <p>HTML image <code>&lt;img&gt;</code> elements embed images in documents. The src attribute contains the image URL and is mandatory. &lt;img&gt; is an empty element meaning it should not have a closing tag.</p>
+                <div class="code-example">
+                    <pre>
+                        <code>
+                            &lt;img src=&quot;image.png&quot;&gt;
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article class="sub-topic">
+                <h3><span class="markdown-bullet mb3">### </span>Text Formatting Tags </h3>
+                <p></p>
+                <div class="code-example">
+                    <pre>
+                        <code>
+                            &lt;b&gt;Bold Text&lt;/b&gt;
+                            &lt;strong&gt;This text is important&lt;/strong&gt;
+                            &lt;i&gt;Italic Text&lt;/i&gt;
+                            &lt;em&gt;This text is emphasized&lt;/em&gt;
+                            &lt;u&gt;Underline Text&lt;/u&gt;
+                            &lt;pre&gt;Pre-formatted Text&lt;/pre&gt;
+                            &lt;code&gt;Source code&lt;/code&gt;
+                            &lt;del&gt;Deleted text&lt;/del&gt;
+                            &lt;mark&gt;Highlighted text (HTML5)&lt;/mark&gt;
+                            &lt;ins&gt;Inserted text&lt;/ins&gt;
+                            &lt;sup&gt;Makes text superscripted&lt;/sup&gt;
+                            &lt;sub&gt;Makes text subscripted&lt;/sub&gt;
+                            &lt;small&gt;Makes text smaller&lt;/small&gt;
+                            &lt;kbd&gt;Ctrl&lt;/kbd&gt;
+                            &lt;blockquote&gt;Text Block Quote&lt;/blockquote&gt;
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article class="sub-topic">
+                <h3><span class="markdown-bullet mb3">### </span>Headings </h3>
+                <p></p>
+                <div class="code-example">
+                    <pre>
+                        <code>
+                            &lt;h1&gt; This is Heading 1 &lt;/h1&gt;
+                            &lt;h2&gt; This is Heading 2 &lt;/h2&gt;
+                            &lt;h3&gt; This is Heading 3 &lt;/h3&gt;
+                            &lt;h4&gt; This is Heading 4 &lt;/h4&gt;
+                            &lt;h5&gt; This is Heading 5 &lt;/h5&gt;
+                            &lt;h6&gt; This is Heading 6 &lt;/h6&gt;
+
+                        </code>
+                    </pre>
+                </div>
+            </article>
+
+            <article class="sub-topic">
+                <h3><span class="markdown-bullet mb3">### </span>Section Dividers </h3>
+                <div class="code-example">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>div</td>
+                                <td>Division or text within other content</td>
+                            </tr>
+                            <tr>
+                                <td>span</td>
+                                <td>Section or text within other content</td>
+                            </tr>
+                            <tr>
+                                <td>p</td>
+                                <td>Paragraph or text</td>
+                            </tr>
+                            <tr>
+                                <td>br</td>
+                                <td>Line Break</td>
+                            </tr>
+                            <tr>
+                                <td>hr</td>
+                                <td>Basic Horizontal Line</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </article>
+            
+        </section>
+    </main>
+
+
+    
+</body>
+</html>
